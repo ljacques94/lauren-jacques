@@ -4,70 +4,122 @@
 <title>Lauren Jacques</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
     </head>
     <body id="top">
-        <header>
-            <a href="#top">Lauren Jacques</a>
+        <header class="fixed bg-indigo-800 w-full text-white md:flex md:justify-between">
+            <a class="block px-8 py-4 hover:bg-gray-400 font-bold" href="#top" >Lauren Jacques</a>
             <nav>
-                <ul>
+                <ul class="md:flex">
                     <li>
-                        <a href="#hero">Hero</a>
+                        <a class="block px-8 py-4 hover:bg-gray-400" href="#hero">Intro</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class="block px-8 py-4 hover:bg-gray-400" href="#about">Things I Love</a>
                     </li>
-                    <li>
-                        <a href="tech-support">Tech Support</a>
-                    </li>
+                    
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="hero">
-                <p>It's Laur from</p>
-                <h1>ManchVegas</h1>
-                <p>Food Science | Mathematics | Secondary Education</p>
-            </section>
-            <section id="about">
-                <h2>About</h2>
-                <ul></ul>
-                <li>
-                    <img src="Design.jpg">
-                    <h3>Design</h3>
-                    <p>Filler text</p>
+            
+              <section id="hero" class="h-screen bg-purple-200 text-center text-gray-600 body-font">
+                <div class="container px-5 py-20 mx-auto flex flex-wrap">
+
+                  <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                    <img alt="feature" class="object-cover object-center rounded-lg h-5/6 p-10" src="LaurenRey.jpeg">
+                  </div>
+                  <div class="flex flex-col flex-wrap lg:py-6 mb-10 lg:w-1/2 lg:pl-12 lg:text-left">
+                
+                    <div class="flex flex-col mb-4 lg:items-start items-center">
+                        <div class="flex-grow">
+                        <h1 class="text-indigo-900 text-3xl title-font uppercase tracking-wider font-medium mb-3">Hi, I'm Lauren!</h1>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div class="flex-grow">
+                        <h2 class="text-gray-900 text-xl title-font uppercase tracking-wider font-medium mb-3">Hometown</h2>
+                        <p class="leading-relaxed text-lg">Manchester, NH</p>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-xl title-font uppercase tracking-wider font-medium mb-3">Undergraduate Studies</h2>
+                        <h3 class="leading-relaxed text-lg mb-2">University of Vermont | Burlington, VT</h3>
+                        <p class="leading-relaxed text-base">Major: Food Science and Nutrition | Minor: Mathematics</p>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10  lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-xl title-font uppercase tracking-wider font-medium mb-3">Graduate Studies</h2>
+                        <h3 class="leading-relaxed text-lg mb-2">Clemson University | Clemson, SC</h3>
+                        <p class="leading-relaxed text-base">MS in Industrial Engineering</p>
+                       
+                    <a href="https://www.linkedin.com/in/laurenmjacques"
+                        rel="noopener noreference"
+                        target="_blank"
+                        class=" mt-10 bg-blue-600 text-white font-mono rounded-md px-8 py-3 gap-10 inline-block"> Connect via LinkedIn
+                    </a>   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </section>
+              
+            <section id="about" class="bg-purple-300 pt-10">
+                <h2 class="text-center text-4xl uppercase tracking-wider">Things I Love</h2>
+                <ul class="grid p-10 gap-10 md:grid-cols-3 md:grid-rows-2">
+                <li class="bg-gray-200 rounded-lg overflow-hidden ">
+                    <img src="Mowgli.jpeg" class="w-full">
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">My Cat, Mowgli</h3>
+                    <p class="text-center">I adopted Mowgli in may of 2015 from the Animal Rescue League in Bedford, NH. He is old and grumpy and I love him.</p>
+                </div>
                 </li>
-                <li>
-                    <img src="Typing.jpg">
-                    <h3>Programming</h3>
-                    <p>I don't know what's going on</p>
+                <li class="bg-gray-200 shadow rounded-lg overflow-hidden ">
+                    <img src="Rey.jpeg" class="w-full"> 
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">My Dog, Rey</h3>
+                    <p class="text-center">I adopted Rey May 4th, 2019 from the Greenville Humane Society. The force is strong with her.</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="weekend.jpg">
-                    <h3>Thursday</h3>
-                    <p>Because it's almost Friday</p>
+                <li class="bg-gray-200 rounded-lg overflow-hidden ">
+                    <img src="Jase.jpeg" class="w-full">
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">My fiance, Jason</h3>
+                    <p class="text-center">I met Jason in 2016 at my college graduation. We are getting married in September 2021.</p>
+                </div>
                 </li>
+                <li class="bg-gray-200 shadow rounded-lg overflow-hidden ">
+                    <img src="Rally.jpeg" class="w-full"> 
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">Dance</h3>
+                    <p class="text-center">I was a dancer from ages 3 to 21 and was on the University of Vermont Dance Team throughout undergrad.</p>
+                    </div>
+                </li>
+                <li class="bg-gray-200 rounded-lg overflow-hidden ">
+                    <img src="Run.JPG" class="w-full">
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">Running</h3>
+                    <p class="text-center">I started running in 2016 as a way to stay fit after college. Now I'm training for the Savannah Rock n' Roll Marathon in November 2021.</p>
+                </div>
+                </li>
+                <li class="bg-gray-200 rounded-lg overflow-hidden ">
+                    <img src="IceCream.JPG" class="w-full">
+                    <div class="p-4">
+                    <h3 class="font-bold text-center uppercase tracking-wider">Dairy</h3>
+                    <p class="text-center">In undergrad I learned a lot about cheese and dairy. I have worked at Ben and Jerry's and two different cheese companies.</p>
+                </div>
+                </li>
+            </ul>
             </section>
-            <section id="tech-support">
-                <h2>Tech Support</h2>
-                <ul>
-                    <li>
-                        <img src="Lauren.jpg">
-                        <h3>Lauren Jacques</h3>
-                        <p>Simpsonville, SC</p>
-                    </li>
-                    <li>
-                        <img src="Jason.jpeg">
-                        <h3>Jason Williams</h3>
-                        <p>Simpsonville, SC</p>
-                    </li>
-                    <li>
-                        <img src="Rey.jpg">
-                        <h3>Rey Jacques-Williams</h3>
-                        <p>Simpsonville, SC</p>
-                    </li>
-                </ul>
-            </section>
+            
         </main>
-        <footer>2021 Lauren Jacques, All Rights Reserved.</footer>
+        <footer class="bg-indigo-400 text-center italics">2021 Lauren Jacques, All Rights Reserved.</footer>
     </body>
 </html>
